@@ -1,0 +1,124 @@
+.html {
+    scroll-behavior: smooth;
+}
+
+.test {
+    width: 50%;
+    height: 110%;
+    padding-top: 75px;
+}
+
+.fixed-nav {
+    position: fixed;
+    background-color: white;
+    top: 0;
+    left: 0;
+    z-index: 750;
+    width: 100%;
+}
+
+.tab-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tabs {
+    display: flex;
+    align-items: center;
+}
+
+.icon-tab {
+    width: 100px;
+}
+
+
+.about-tab,
+.experience-tab,
+.education-tab,
+.contact-tab {
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    font-size: medium;
+    cursor: default;
+    margin: 7px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    border: none;
+    text-decoration: none;
+}
+
+.about-tab a:link,
+.experience-tab a:link,
+.education-tab a:link,
+.contact-tab a:link {
+    color: black;
+    text-decoration: none;
+}
+
+.about-tab a:visited,
+.experience-tab a:visited,
+.education-tab a:visited,
+.contact-tab a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.active-button {
+    opacity: 1;
+    background-color: rgba(222, 14, 14, 0.3);
+    border-radius: 3px;
+}
+
+
+.about-tab:hover,
+.experience-tab:hover,
+.education-tab:hover,
+.contact-tab:hover {
+    opacity: 1;
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 3px;
+}
+
+.link-tab {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+#scroll-progress-container {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #ccc;
+    z-index: 9999;
+}
+
+#scroll-progress {
+    height: 100%;
+    width: 0;
+    background-color: #2461F0;
+    transition: width 0.2s ease;
+}
+
+section h1 {
+    padding-top: 75px;
+}
+
+.fixed-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
+}
+
+.tabs {
+    grid-column: 2 / 3;
+}
+
+.link-tab {
+    grid-column: 3 / 4;
+}

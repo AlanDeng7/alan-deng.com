@@ -1,26 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <link rel="stylesheet" href="src/Template/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@1000&display=swap" rel="stylesheet">
 
   <title>
     Alan Deng
   </title>
 
-  <p>
-    Currently down for maintenance, check back in a bit!
-  </p>
-
-  <a href="https://giphy.com/gifs/montereybayaquarium-face-otter-sea-1xlGfZ07Dq62jqKT9t" target="_blank">
-    <img
-      src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExaG1scjB1Y3JzdWs3b2FwbDQ4c3ZnZ2E5eGNxeDFqbW44Z2pxOTUxdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1xlGfZ07Dq62jqKT9t/giphy.gif"
-      alt="GIF">
-  </a>
-
+  <link rel="icon" href="src/Resources/Images/icon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="src/Resources/Images/icon.png" type="image/x-icon">
 
 </head>
+
+<body>
+  <nav class="fixed-nav">
+    <div class="tab-nav">
+      <div class="tabs">
+        <a href="index.html">
+          <img class="icon-tab" src="src/Resources/Images/icon.png">
+        </a>
+        <button class="about-tab section-button" data-section="About"><a href="#About">About</a></button>
+
+        <button class="experience-tab section-button" data-section="Experience"><a
+            href="#Experience">Experience</a></button>
+
+        <button class="education-tab section-button" data-section="Education"><a
+            href="#Education">Education</a></button>
+
+        <button class="contact-tab section-button" data-section="Contact"><a href="#Contact">Contact</a></button>
+
+
+        <a class="link-tab" href="https://github.com/AlanDeng7" target="_blank">
+          <i class="fa-brands fa-square-github fa-2xl" style="color:black;"></i>
+        </a>
+
+        <a class="link-tab" href="https://www.linkedin.com/in/alandeng7/" target="_blank">
+          <i class="fa-brands fa-linkedin fa-2xl" style="color: black;"></i>
+        </a>
+
+        <a class="link-tab" href="https://www.instagram.com/alandeng7/" target="_blank">
+          <i class="fa-brands fa-square-instagram fa-2xl" style="color:  black;"></i>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="scroll-progress-container">
+    <div id="scroll-progress"></div>
+  </div>
+
+  <header>
+    <img class="test" src="https://seeklogo.com/images/P/patrick-star-logo-116A4E0C2F-seeklogo.com.png">
+  </header>
+
+  <section id="About">
+    <h1>About</h1>
+    <img class="test" src="https://seeklogo.com/images/S/spongebob-squarepant-logo-2E3C140B31-seeklogo.com.png">
+  </section>
+
+  <section id="Experience">
+    <h1>Experience</h1>
+    <img class="test" src="https://seeklogo.com/images/G/gary-the-snail-logo-2A29452174-seeklogo.com.png">
+  </section>
+
+  <section id="Education">
+    <h1>Education</h1>
+    <img class="test"
+      src="https://seeklogo.com/images/S/squidward-logo-13484339D6-seeklogo.com.png?v=638047302420000000">
+  </section>
+
+  <section id="Contact">
+    <h1>Contact</h1>
+    <img class="test" src="https://seeklogo.com/images/P/plankton-logo-0E674878F7-seeklogo.com.png">
+  </section>
+
+  <script src="src/Static/scrollbar.js"></script>
+  <script src="src/Static/activetab.js"></script>
+</body>
 
 </html>
