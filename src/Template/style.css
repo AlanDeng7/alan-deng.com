@@ -1,11 +1,9 @@
-.html {
-    scroll-behavior: smooth;
+* {
+    border: 0px solid red;
 }
 
-.test {
-    width: 50%;
-    height: 110%;
-    padding-top: 75px;
+.html {
+    scroll-behavior: smooth;
 }
 
 .fixed-nav {
@@ -13,35 +11,39 @@
     background-color: white;
     top: 0;
     left: 0;
-    z-index: 750;
     width: 100%;
-}
-
-.tab-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
 }
 
-.tabs {
+.fixed-nav .icon-nav {
+    width: 110px;
+    display: inline-block;
+}
+
+.fixed-nav .tab-nav {
     display: flex;
     align-items: center;
 }
 
-.icon-tab {
-    width: 100px;
+.fixed-nav .link-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    padding-right: 15px;
 }
-
 
 .about-tab,
 .experience-tab,
 .education-tab,
 .contact-tab {
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 7px;
     padding-right: 7px;
-    padding-bottom: 7px;
-    font-size: medium;
+    padding-bottom: 5px;
+    font-size: 20px;
     cursor: default;
     margin: 7px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -66,13 +68,6 @@
     text-decoration: none;
 }
 
-.active-button {
-    opacity: 1;
-    background-color: rgba(222, 14, 14, 0.3);
-    border-radius: 3px;
-}
-
-
 .about-tab:hover,
 .experience-tab:hover,
 .education-tab:hover,
@@ -82,16 +77,10 @@
     border-radius: 3px;
 }
 
-.link-tab {
-    padding-top: 5px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 5px;
-}
 
 #scroll-progress-container {
     position: fixed;
-    top: 60px;
+    top: 70px;
     left: 0;
     width: 100%;
     height: 5px;
@@ -102,7 +91,7 @@
 #scroll-progress {
     height: 100%;
     width: 0;
-    background-color: #2461F0;
+    background-color: black;
     transition: width 0.2s ease;
 }
 
@@ -110,15 +99,9 @@ section h1 {
     padding-top: 75px;
 }
 
-.fixed-nav {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr 2fr 1fr;
-}
 
-.tabs {
-    grid-column: 2 / 3;
-}
-
-.link-tab {
-    grid-column: 3 / 4;
+.test {
+    width: 50%;
+    height: 110%;
+    padding-top: 75px;
 }
