@@ -73,8 +73,9 @@
 .education-tab:hover,
 .contact-tab:hover {
     opacity: 1;
+    transition-duration: 0.6s;
     background-color: rgba(128, 128, 128, 0.3);
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 
@@ -95,13 +96,72 @@
     transition: width 0.2s ease;
 }
 
-section h1 {
-    padding-top: 75px;
+#Welcome {
+    margin-top: 200px;
+    height: 80vh;
+    text-align: center;
+}
+
+#Welcome p1 Strong {
+    font-size: 60px;
+}
+
+#Welcome p1 em {
+    font-size: 45px;
+    color: #0808086e;
+}
+
+#Welcome h1,
+p {
+    font-size: 20px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.CV-download-button,
+.LinkedIN-button {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    height: 65px;
+    width: 160px;
+    font-size: 17.5px;
+    color: black;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+
+}
+
+.CV-download-button:hover,
+.LinkedIN-button:hover {
+    background-color: #0808086e;
+    text-decoration: none;
+    transition-duration: 0.6s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.CV-download-button a:link,
+.LinkedIN-button a:link,
+.CV-download-button a:visited,
+.LinkedIN-button a:visited {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
 }
 
 
-.test {
-    width: 50%;
-    height: 110%;
+section h1 {
     padding-top: 75px;
+    text-align: center;
+
+}
+
+
+footer {
+    text-align: center;
+    background-color: #ccc;
+    padding: 3px;
 }
