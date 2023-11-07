@@ -50,16 +50,13 @@
     color: black;
     border: none;
     text-decoration: none;
+    font-family: Helvetica, sans-serif;
 }
 
 .about-tab a:link,
 .experience-tab a:link,
 .education-tab a:link,
-.contact-tab a:link {
-    color: black;
-    text-decoration: none;
-}
-
+.contact-tab a:link,
 .about-tab a:visited,
 .experience-tab a:visited,
 .education-tab a:visited,
@@ -67,6 +64,7 @@
     color: black;
     text-decoration: none;
 }
+
 
 .about-tab:hover,
 .experience-tab:hover,
@@ -156,12 +154,15 @@ p {
 section h1 {
     padding-top: 75px;
     text-align: center;
-
+    color: black;
+    text-decoration: none;
 }
+
+
 
 
 footer {
     text-align: center;
-    background-color: #ccc;
+    background-color: #e9e7e7;
     padding: 3px;
 }
