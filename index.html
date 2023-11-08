@@ -59,10 +59,11 @@
   </div>
 
   <header id="Welcome">
-    <p>Hello there I'm</p>
+    <p>Hello there, I'm</p>
     <p1><strong>Alan</strong><em> RongBin </em><strong>Deng</strong></p1>
     <p>Electrical Engineer &#8594; Software Engineer</p>
-    <button class="CV-download-button"><a href="src/Resources/resume" download>Download CV</a>
+    <button type="button" class="CV-download-button" disabled><a href="src/Resources/resume" download="Alan_Deng_CV"
+        disabled>Download CV</a>
     </button>
     <button class="LinkedIN-button"><i class="fa-brands fa-linkedin fa-2xl" style="color: black;"></i> <a
         href="https://www.linkedin.com/in/alandeng7/" target="_blank">LinkedIN</a>
@@ -88,16 +89,28 @@
   <section id="Contact">
     <h1>Contact</h1>
 
-    <div class="contacts-box">
+    <div class="contact-box">
       <info class="contact-box-left">
-        <div>
-          email
+        <div class="contact-box-left-icons">
+          <i class="fa-solid fa-envelope fa-2xl" style="color: black;"></i>
+          <a href="mailto:alan.rb.deng@gmail.com"
+            onclick="copyToClipboard('alan.rb.deng@gmail.com')">alan.rb.deng@gmail.com</a>
         </div>
-        <div>
-          linkedin
+
+        <div class="contact-box-left-icons">
+          <i class="fa-brands fa-linkedin fa-2xl" style="color: black;"></i>
+          <a href="https://www.linkedin.com/in/alandeng7/" target="_blank">LinkedIN/alandeng7</a>
         </div>
-        <div>
-          instagram
+
+        <div class="contact-box-left-icons">
+          <i class="fa-brands fa-square-instagram fa-2xl" style="color:  black;"></i>
+          <a href="https://www.instagram.com/alandeng7/" target="_blank">@alandeng7</a>
+        </div>
+
+        <div class="contact-box-left-icons">
+          <i class="fa-solid fa-location-dot fa-2xl" style="color: black;"></i>
+          <a href="https://www.google.com/maps/place/Toronto,+ON/@43.7216476,-79.5356024,10.89z/data=!4m6!3m5!1s0x89d4cb90d7c63ba5:0x323555502ab4c477!8m2!3d43.653226!4d-79.3831843!16zL20vMGg3aDY?entry=ttu"
+            target="_blank">Toronto</a>
         </div>
       </info>
 
@@ -120,20 +133,28 @@
           </div>
           <div class="input-group">
             <label>Phone</label>
-            <input type="test" class="input-field" placeholder="Your Phone Number">
+            <input type="text" inputmode="numeric" class="input-field" placeholder="Your Phone Number">
           </div>
         </div>
 
         <div class="input-row">
-          <div class="input-group">
+          <div class="input-group-wide">
             <label>Subject</label>
             <input type="text" class="input-field" placeholder="Subject">
           </div>
         </div>
 
-        <div class="input-message-box">
-          <label>Message</label>
-          <input type="text" class="input-field" placeholder="Your Message">
+        <div class="input-row">
+          <div class="input-group-wide">
+            <label>Message</label>
+            <textarea class="input-textarea" rows="5" placeholder="Your Message"></textarea>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <button type="button" class="contact-submit-button" disabled>
+            Submit
+          </button>
         </div>
       </form>
     </div>
@@ -146,7 +167,7 @@
   </footer>
 
   <script src="src/Static/scrollbar.js"></script>
-  <script src="src/Static/activetab.js"></script>
+  <script src="src/Static/email-copy.js"></script>
 </body>
 
 </html>

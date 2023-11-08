@@ -6,6 +6,7 @@
     scroll-behavior: smooth;
 }
 
+
 .fixed-nav {
     position: fixed;
     background-color: white;
@@ -65,7 +66,6 @@
     text-decoration: none;
 }
 
-
 .about-tab:hover,
 .experience-tab:hover,
 .education-tab:hover,
@@ -75,7 +75,6 @@
     background-color: rgba(128, 128, 128, 0.3);
     border-radius: 10px;
 }
-
 
 #scroll-progress-container {
     position: fixed;
@@ -93,6 +92,7 @@
     background-color: black;
     transition: width 0.2s ease;
 }
+
 
 #Welcome {
     margin-top: 200px;
@@ -150,15 +150,110 @@ p {
     text-decoration: none;
 }
 
-
 section h1 {
     padding-top: 75px;
     text-align: center;
     color: black;
     text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    font-weight: normal;
 }
 
+.contact-box {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 15%;
+    margin-right: 15%;
+    gap: 10%;
+    font-family: Helvetica, sans-serif;
+}
 
+.contact-box-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contact-box-left-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box-left-icons a {
+    margin-top: 20px;
+    margin-bottom: 3px;
+    color: black;
+    font-family: Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+.contact-box-left-icons a:link,
+.contact-box-left-icons a:visited {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    border-bottom: 1px solid white;
+}
+
+.contact-box-left-icons a:hover {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    border-bottom: 1px solid black;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.input-row .input-group {
+    flex-basis: 45%;
+}
+
+.input-row .input-group-wide {
+    flex-basis: 100%;
+}
+
+.contact-submit-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    height: 40px;
+    width: 40%;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.contact-submit-button:hover {
+    background-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.6s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-family: Helvetica, sans-serif;
+}
+
+textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    margin-top: 5px;
+    padding: 2px;
+    font-family: Helvetica, sans-serif;
+}
 
 
 footer {
