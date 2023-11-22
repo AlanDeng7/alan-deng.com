@@ -1,3 +1,4 @@
+/*overall*/
 * {
     border: 0px solid red;
 }
@@ -6,7 +7,27 @@
     scroll-behavior: smooth;
 }
 
+section h1 {
+    padding-top: 80px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 30px;
+}
 
+section h2 {
+    padding-top: 55px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-family: "Lucida Console", "Courier New", monospace;
+    font-weight: bold;
+    font-size: 22.5px;
+}
+
+/*NAV bar */
 .fixed-nav {
     position: fixed;
     background-color: white;
@@ -19,9 +40,10 @@
     text-align: center;
 }
 
-.fixed-nav .icon-nav {
+.icon-nav {
     width: 80px;
     display: inline-block;
+    object-fit: contain;
 }
 
 .fixed-nav .tab-nav {
@@ -38,6 +60,7 @@
 }
 
 .about-tab,
+.project-tab,
 .experience-tab,
 .education-tab,
 .contact-tab {
@@ -56,10 +79,12 @@
 }
 
 .about-tab a:link,
+.project-tab a:link,
 .experience-tab a:link,
 .education-tab a:link,
 .contact-tab a:link,
 .about-tab a:visited,
+.project-tab a:visited,
 .experience-tab a:visited,
 .education-tab a:visited,
 .contact-tab a:visited {
@@ -68,6 +93,7 @@
 }
 
 .about-tab:hover,
+.project-tab:hover,
 .experience-tab:hover,
 .education-tab:hover,
 .contact-tab:hover {
@@ -94,7 +120,7 @@
     transition: width 0.2s ease;
 }
 
-
+/*Welcome Section*/
 #Welcome {
     margin-top: 200px;
     height: 80vh;
@@ -102,7 +128,7 @@
 }
 
 #Welcome p1 Strong {
-    font-size: 60px;
+    font-size: 85px;
     font-family: 'League Spartan', sans-serif;
 }
 
@@ -147,15 +173,95 @@ p {
     text-decoration: none;
 }
 
-section h1 {
-    padding-top: 75px;
-    text-align: center;
-    color: black;
-    text-decoration: none;
-    font-family: Helvetica, sans-serif;
-    font-weight: normal;
+/*About Section*/
+.about-row-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
+.about-summary p {
+    padding: 35px;
+    font-size: 20px;
+}
+
+.about-questions {
+    max-width: 70%;
+    margin: auto;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.about-question {
+    cursor: pointer;
+    font-family: Helvetica, sans-serif;
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    font-size: 1.3rem;
+    padding: 2rem, 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.active,
+.about-question:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.about-answer {
+    width: 100%;
+    background-color: whitesmoke;
+    color: black;
+    overflow: hidden;
+    display: none;
+}
+
+.about-answer>p {
+    font-size: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.active,
+.about-answer:hover {
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+}
+
+.about-answer ul li {
+    list-style-type: square;
+    font-family: "Lucida Console", "Courier New", monospace;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.faq {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 5px 0;
+}
+
+.faq.active {
+    border: none;
+}
+
+.about-faq>p {
+    font-family: Helvetica, sans-serif;
+}
+
+
+/*Contact Section*/
 .contact-box {
     display: flex;
     margin-top: 35px;
@@ -252,7 +358,7 @@ textarea {
     font-family: Helvetica, sans-serif;
 }
 
-
+/*Footer Section*/
 footer {
     text-align: center;
     padding: 15px;
